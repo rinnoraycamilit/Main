@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Main</title>
+
+	
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    	
+
+ 		<!-- Source our javascript file with the   	
+
+
+    	<script src="jquery-1.11.1.js"></script>
+
+    	jQUERY code -->
+  
+
+    	<script> 
+    		/*  jQuery ready function. Specify a function to execute when the DOM is fully loaded.  */
+			$(document).ready(
+  /* This is the function that will get executed after the DOM is fully loaded */
+  				function () {
+    /* Next part of code handles hovering effect and submenu appearing */
+   			 					$('.nav li').hover(
+      								function () { //appearing on hover
+      		  										$('ul', this).fadeIn();
+     			 								},
+     		 function () { //disappearing on hover
+        						$('ul', this).fadeOut();
+			     	 	 }
+			   	 			);
+			  				}
+						);
+
+
+
+			$(document).ready("#slideshow > div:gt(0)").hide();
+
+			setInterval(function() { 
+ 					 $('#slideshow > div:first')
+  		 				 .fadeOut(8000)
+   							 .next()
+    						.fadeIn(8000)
+  							  .end()
+ 					   .appendTo('#slideshow');
+				},  8000);
+
+
+
+</script>
+
+   		<link rel="stylesheet" href="runnable.css" />
+
+
+		</style>
+
+
+		
+
+	</head>
+
+
+<body>
+
+		<!--Main Container-->
+	<div id="container">
+
+		
+
+
+		<div id="header1">
+
+		</div>
+
+		<div class="header2">
+				<div class="navigation" style=>
+					<table style = "width: 100%;">
+						<tr>
+							<td>
+  					<ul class="nav">
+  						<li id="NBA">
+  							<a href="http://www.nba.com/">NBA</a>
+  						</li>
+  						<li>
+  							<a href="index.html">Home</a>
+  						</li>
+  						<li>
+  							<a href="http://www.nba.com/heat/news">News</a>
+  						</li>
+  						<li>
+  							<a href="#">Team</a>
+		  						<ul>
+		  							<li><a href="roster.html">Roster</a></li>
+		  							<li><a href="#">Injury Update</a></li>
+		  						</ul>
+  						</li>
+  						<li>
+  							<a href="#">Full Schedule</a>
+  						</li>
+  						<li>
+		  					<a href="#">Videos</a>
+		  						
+		  				</li>
+
+		  				<li>
+		  					<a href="#">About Us</a>
+		  						<ul>
+		  							<li><a href="#">Company</a></li>
+		  							<li><a href="#">Mission</a></li>
+		  							<li><a href="http://rhaynz.5gbfree.com/tax_calculator/Index.html"> Tax Calculator</a></li>
+			  							<li><a href="http://rhaynz.5gbfree.com/calculator/Index.html"> Calculator</a></li>
+		  						</ul>
+		  				</li>
+		  			</ul>
+		  		</td>
+		  		</tr>
+		  			</table>
+		  		</div>
+		</div>
+			
+
+		<div id="slideshow" >
+
+		   <div class="show">
+		     <img src="images/wade_show.png">
+		   </div>
+		   <div class="show">
+		     <img src="images/bosh_show.png">
+		   </div>
+		   <div class="show">
+		    <img src="images/dancers_show.png">
+		   </div>
+
+		</div>
+
+
+		<div id ="news">
+
+			<ul class="newsTop">
+				<br>
+					<li>
+						<a class="newsTop" href="http://http://www.nba.com/heat/history/hall-fame-alonzo-mourning">Hall of Fame: Alonzo Mourning
+						</a>
+					</li>
+
+					<br>
+				
+					<li>
+						<a class="newsTop" href="http://www.nba.com/heat/news/heat-individual-game-tickets-go-sale-tomorrow">
+							HEAT Individual Game Tickets To Go On Sale Tomorrow
+						</a>
+					</li>
+					<br>
+
+					<li>
+						<a class="newsTop" href="http://www.nba.com/heat/newsrecap/heat-back-school">
+							HEAT Back To School
+						</a>
+					</li>
+					<br>
+
+					<li>
+						<a class="newsTop" href="http://www.nba.com/heat/2014-15-heat-schedule-breakdown">2014-15 HEAT Schedule Breakdown
+						</a>
+					</li>
+					<br>
+
+					<li>
+						<a class="newsTop" href="http://www.nba.com/heat/dancer-gallery-finals">Dancer Gallery Finals
+						</a>
+					</li>
+					<br>
+
+					<li>
+						<a class="newsTop" href="http://www.nba.com/heat/espanol/el-heat-anuncia-su-calendario-de-la-temporada-regular-2014-15">El HEAT Anuncia Su Calendario de La Temporada Regular 2014-15
+						</a>
+					</li>
+					<br>
+			</ul>
+				
+
+		</div>
+
+
+		<div id="newsBelow1" class="news1">
+			<img src="images/reggie_williams.png" >
+				<p>
+					 1 week ago
+			 	</p>
+			<h3> 
+				<font color="#480000">
+					<a href="http://www.nba.com/heat/heat/newsrecap/heat-signs-reggie-williams">
+						HEAT Signs Reggie Williams
+					</a>
+				</font>
+			</h3>
+			<p> 
+			
+					 Miami, August 12 - The Miami HEAT announced today that they have signed guard Reggie WIlliams.
+		
+			</p>
+		</div>
+
+		<div id="newsBelow2"class="news1">
+			<img src="images/shawne_williams.png">
+				<p>
+					 3 weeks ago
+				</p>
+			 	</font>
+			<h3> 
+				<font color="#480000">
+					<a href="http://www.nba.com/heat/news/heat-signs-shawne-williams">
+						HEAT Signs Shawne Williams
+					</a>
+				</font>
+			</h3>
+			<p> 
+					MIAMI, August 1 - The Miami HEAT announced today that they have signed forward Shawne Williams.
+
+			</p>
+		</div>
+
+		<div id="video1" class="news1">
+			<video controls>
+  				<source src="http://www.nba.com/heat/welcome-miami-shabazz-napier4" type="video/mp4">
+  				<source src="movie.ogg" type="video/ogg">
+  				Your browser does not support the video tag.
+			</video>
+
+			
+					 <br>
+					 <p>
+					 3 weeks ago
+					</p>
+			<h3> 
+				<font color="#480000">
+					<a href="http://www.nba.com/heat/welcome-miami-shabazz-napier">
+			
+						Welcome to Miami Shabazz Napier
+
+					</a>
+				</font>
+			</h3>
+			<p> 
+				
+					MIAMI, August 1 - The Miami HEAT announced today that they have signed college star point guard Shabazz Napier.
+
+			</p>
+		</div>
+
+				<!--Footer-->
+
+				
+		<div id="footer">	
+			
+		
+		</div>
+
+		
+	</div>
+
+</body>
+
+</html>
